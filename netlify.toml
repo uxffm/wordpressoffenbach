@@ -7,3 +7,9 @@
   to = "https://wordpress-offenbach.de/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://wordpress-offenbach.netlify.app/*"
+  to = "https://wordpress-offenbach.de/:splat"
+  status = 301
+  force = true
