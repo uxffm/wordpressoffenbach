@@ -1,0 +1,16 @@
+---
+import { services } from '../data/content';
+---
+<section class="leistungen abschnitt" id="leistungen">
+  <div class="seite">
+    <h2 class="leistungen__titel">{services.title}</h2>
+    <ul class="kasten">
+      {services.items.map((item) => (
+        <li class="fach">
+          <h3 class="fach__titel">{item.title}</h3>
+          <p class="fach__text">{item.text}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

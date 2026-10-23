@@ -1,0 +1,16 @@
+---
+import { contact } from '../data/content';
+import Text from './Text.astro';
+---
+<section class="kontakt abschnitt" id="kontakt">
+  <div class="seite">
+    <h2 class="kontakt__titel">{contact.title}</h2>
+    <p class="kontakt__text">{contact.text}</p>
+    <a class="knopf knopf--marker" href="#kontakt">{contact.cta}</a>
+    <dl class="kontakt__daten">
+      <div><dt>Telefon</dt><dd><Text text={contact.phone} /></dd></div>
+      <div><dt>E-Mail</dt><dd><Text text={contact.email} /></dd></div>
+      <div><dt>Adresse</dt><dd><Text text={contact.address} /></dd></div>
+    </dl>
+  </div>
+</section>

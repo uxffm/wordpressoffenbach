@@ -1,0 +1,19 @@
+---
+import { compliance } from '../data/content';
+---
+<section class="recht abschnitt">
+  <div class="seite">
+    <div class="recht__raster">
+      <h2>{compliance.title}</h2>
+      <p class="recht__text">{compliance.text}</p>
+    </div>
+    <dl class="kuerzel">
+      {compliance.terms.map((term) => (
+        <div>
+          <dt class="kuerzel__wort">{term.abbr}</dt>
+          <dd class="kuerzel__voll">{term.full}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>

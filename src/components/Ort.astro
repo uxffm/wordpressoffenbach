@@ -1,0 +1,19 @@
+---
+import { local } from '../data/content';
+
+const last = local.districts.length - 1;
+---
+<section class="ort abschnitt">
+  <div class="seite">
+    <h2>{local.title}</h2>
+    <p class="ort__text">
+      {local.lead}{' '}
+      {local.districts.map((name, i) => (
+        <>
+          <span class="ort__name">{name}</span>{i < last - 1 ? ', ' : i === last - 1 ? ' oder ' : '.'}
+        </>
+      ))}
+    </p>
+    <p class="ort__auch">{local.also}</p>
+  </div>
+</section>

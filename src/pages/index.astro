@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import Kopf from '../components/Kopf.astro';
+import Hero from '../components/Hero.astro';
+import Warum from '../components/Warum.astro';
+import Leistungen from '../components/Leistungen.astro';
+import Recht from '../components/Recht.astro';
+import Ort from '../components/Ort.astro';
+import Ablauf from '../components/Ablauf.astro';
+import Fragen from '../components/Fragen.astro';
+import Kontakt from '../components/Kontakt.astro';
+import Fuss from '../components/Fuss.astro';
+import { meta } from '../data/content';
+---
+<Base title={meta.title} description={meta.description}>
+  <Kopf />
+  <main>
+    <Hero />
+    <Warum />
+    <Leistungen />
+    <Recht />
+    <Ort />
+    <Ablauf />
+    <Fragen />
+    <Kontakt />
+  </main>
+  <Fuss />
+</Base>

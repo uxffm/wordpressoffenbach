@@ -1,0 +1,8 @@
+---
+import { PLACEHOLDER } from '../data/content';
+
+interface Props { text: string }
+
+const parts = Astro.props.text.split(new RegExp(`(${PLACEHOLDER.source})`, 'g'));
+---
+{parts.map((part) => PLACEHOLDER.test(part) ? <mark class="platzhalter">{part}</mark> : part)}

@@ -1,0 +1,16 @@
+---
+import { process } from '../data/content';
+---
+<section class="ablauf abschnitt" id="ablauf">
+  <div class="seite">
+    <h2>{process.title}</h2>
+    <ol class="ablauf__liste">
+      {process.steps.map((step) => (
+        <li class="schritt">
+          <h3 class="schritt__titel">{step.title}</h3>
+          <p class="schritt__text">{step.text}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

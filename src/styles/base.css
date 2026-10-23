@@ -1,0 +1,70 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--tinte);
+  font-family: var(--font-text);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1, h2, h3, p, ol, ul, dl, dd { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+
+h1, h2, h3, .anzeige {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 104%;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+h2 { font-size: clamp(1.9rem, 4vw, 3.25rem); }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--druckblau);
+  outline-offset: 3px;
+}
+
+.seite { width: var(--seite); margin-inline: auto; }
+
+.abschnitt { padding-block: var(--abstand); }
+
+.knopf {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  background: var(--tinte);
+  color: var(--weiss);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-stretch: 112%;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  border: var(--linie);
+  transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+.knopf:hover { background: var(--druckblau); border-color: var(--druckblau); }
+
+.knopf--marker { background: var(--marker); color: var(--tinte); border-color: var(--marker); }
+.knopf--marker:hover { background: var(--weiss); border-color: var(--weiss); color: var(--tinte); }
+
+.platzhalter {
+  background: var(--marker);
+  color: var(--tinte);
+  padding: 0 0.25em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wordpress-offenbach.de/sitemap-index.xml

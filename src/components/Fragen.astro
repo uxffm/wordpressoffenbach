@@ -1,0 +1,17 @@
+---
+import { faq } from '../data/content';
+import Text from './Text.astro';
+---
+<section class="fragen abschnitt" id="fragen">
+  <div class="seite fragen__raster">
+    <h2 class="fragen__titel">{faq.title}</h2>
+    <div>
+      {faq.items.map((item) => (
+        <details class="frage">
+          <summary>{item.q}</summary>
+          <p><Text text={item.a} /></p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

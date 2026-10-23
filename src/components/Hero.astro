@@ -1,0 +1,27 @@
+---
+import { hero } from '../data/content';
+---
+<section class="hero">
+  <div class="seite hero__raster">
+    <div>
+      <h1 class="hero__titel">
+        {hero.before} <span class="hero__marker">{hero.marked}</span> {hero.middle} <span class="hero__akzent">{hero.accent}</span>
+      </h1>
+      <p class="hero__text">{hero.lede}</p>
+      <div class="hero__aktion">
+        <a class="knopf" href="#kontakt">{hero.cta}</a>
+      </div>
+    </div>
+    <svg class="schriftprobe" viewBox="0 0 500 600" role="img" aria-label="Schriftprobe: Buchstaben Ag mit Hilfslinien für Oberlänge, Mittellänge, Grundlinie und Unterlänge">
+      <line class="linie" x1="0" x2="500" y1="282" y2="282" />
+      <line class="linie" x1="0" x2="500" y1="302" y2="302" />
+      <line class="linie" x1="0" x2="500" y1="430" y2="430" />
+      <line class="linie" x1="0" x2="500" y1="474" y2="474" />
+      <text x="26" y="430" font-size="210" fill="currentColor">Ag</text>
+      <text class="beschriftung" x="478" y="272" text-anchor="end">Versalhöhe</text>
+      <text class="beschriftung" x="478" y="320" text-anchor="end">Mittellänge</text>
+      <text class="beschriftung" x="478" y="420" text-anchor="end">Grundlinie</text>
+      <text class="beschriftung" x="478" y="464" text-anchor="end">Unterlänge</text>
+    </svg>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "https://www.wordpress-offenbach.de/*"
+  to = "https://wordpress-offenbach.de/:splat"
+  status = 301
+  force = true

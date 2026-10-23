@@ -1,0 +1,15 @@
+:root {
+  --papier: #eceef1;
+  --weiss: #ffffff;
+  --tinte: #101828;
+  --tinte-weich: #3b4558;
+  --druckblau: #2a34d8;
+  --marker: #f5d90a;
+
+  --font-display: 'Anybody Variable', 'Arial Black', Impact, sans-serif;
+  --font-text: 'Instrument Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --seite: min(1240px, 100% - 3rem);
+  --abstand: clamp(4.5rem, 9vw, 8rem);
+  --linie: 2px solid var(--tinte);
+}
