@@ -65,8 +65,8 @@ export const process = {
 export const faq = {
   title: 'Häufige Fragen zu WordPress in Offenbach',
   items: [
-    { q: 'Was kostet eine WordPress-Website?', a: 'Das hängt von Umfang und Funktionen ab. Eine kleine Unternehmensseite beginnt bei [Preis], ein Onlineshop bei [Preis]. Nach dem Erstgespräch erhalten Sie ein transparentes Festpreisangebot.' },
-    { q: 'Wie lange dauert die Umsetzung?', a: 'Eine typische Website ist in [X–Y] Wochen online, abhängig davon, wie schnell Inhalte wie Texte und Fotos vorliegen.' },
+    { q: 'Was kostet eine WordPress-Website?', a: 'Das hängt von Umfang und Funktionen ab. Eine kleine Unternehmensseite gibt es ab 300 €. Bei größeren Projekten wie einem Onlineshop richtet sich der Preis nach dem Umfang. Nach dem Erstgespräch erhalten Sie ein transparentes Festpreisangebot.' },
+    { q: 'Wie lange dauert die Umsetzung?', a: 'Eine Website ist ab etwa einer Woche online, abhängig davon, wie schnell Inhalte wie Texte und Fotos vorliegen.' },
     { q: 'Kann ich meine Website danach selbst bearbeiten?', a: 'Ja. WordPress ist intuitiv bedienbar, und wir schulen Sie nach dem Launch persönlich.' },
     { q: 'Übernehmt ihr auch bestehende WordPress-Seiten?', a: 'Ja. Wir analysieren Ihre aktuelle Website, beheben Fehler, verbessern Ladezeit und Sicherheit und übernehmen die laufende Wartung.' },
   ],
