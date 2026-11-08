@@ -2,5 +2,11 @@
 import { brand } from '../data/content';
 ---
 <footer class="fuss">
-  <div class="seite">© {new Date().getFullYear()} {brand}</div>
+  <div class="seite fuss__zeile">
+    <span>© {new Date().getFullYear()} {brand}</span>
+    <nav aria-label="Rechtliches">
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+    </nav>
+  </div>
 </footer>

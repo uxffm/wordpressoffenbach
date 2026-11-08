@@ -80,3 +80,11 @@ export const contact = {
   email: 'hallo@wordpress-offenbach.de',
   address: 'Goerdelerstr. 33, Offenbach am Main',
 };
+
+// Angaben für Impressum und Datenschutz. Leere Felder werden nicht angezeigt.
+export const legal = {
+  name: 'Lukasz Dzikowski',
+  street: 'Goerdelerstr. 33',
+  zipCity: '63071 Offenbach am Main',
+  ustId: '', // Umsatzsteuer-ID, falls vorhanden (z. B. DE123456789)
+};

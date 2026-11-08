@@ -1,0 +1,19 @@
+---
+import Base from './Base.astro';
+import Kopf from '../components/Kopf.astro';
+import Fuss from '../components/Fuss.astro';
+
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+---
+<Base title={`${title} | WordPress Offenbach`} description={description}>
+  <meta name="robots" content="noindex" slot="head" />
+  <Kopf />
+  <main class="rechtstext">
+    <div class="seite rechtstext__inhalt">
+      <h1>{title}</h1>
+      <slot />
+    </div>
+  </main>
+  <Fuss />
+</Base>

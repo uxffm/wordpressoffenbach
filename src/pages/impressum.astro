@@ -1,0 +1,38 @@
+---
+import Rechtstext from '../layouts/Rechtstext.astro';
+import Text from '../components/Text.astro';
+import { legal, contact } from '../data/content';
+---
+<Rechtstext title="Impressum" description="Impressum und Anbieterkennzeichnung von WordPress Offenbach.">
+  <h2>Angaben gemäß § 5 DDG</h2>
+  <p>
+    <Text text={legal.name} /><br />
+    {legal.street}<br />
+    <Text text={legal.zipCity} />
+  </p>
+
+  <h2>Kontakt</h2>
+  <p>
+    Telefon: <a href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a><br />
+    E-Mail: <a href={`mailto:${contact.email}`}>{contact.email}</a>
+  </p>
+
+  {legal.ustId && (
+    <>
+      <h2>Umsatzsteuer-ID</h2>
+      <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: {legal.ustId}</p>
+    </>
+  )}
+
+  <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p>
+    <Text text={legal.name} /><br />
+    {legal.street}, <Text text={legal.zipCity} />
+  </p>
+
+  <h2>Streitschlichtung</h2>
+  <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+  <h2>Haftung für Inhalte und Links</h2>
+  <p>Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität übernehmen wir jedoch keine Gewähr. Für die Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.</p>
+</Rechtstext>

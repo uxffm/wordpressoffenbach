@@ -278,3 +278,27 @@
   .kuerzel, .kontakt__daten { grid-template-columns: minmax(0, 1fr); }
   .kopf__nav a:not(.knopf) { display: none; }
 }
+
+/* Kontaktformular */
+.kontakt__formular { display: grid; gap: 1.1rem; max-width: 36rem; margin-top: 2.5rem; }
+.kontakt__formular .feld { display: grid; gap: 0.35rem; }
+.kontakt__formular label { font-size: 0.9rem; font-weight: 600; }
+.kontakt__formular input[type="text"], .kontakt__formular input[type="email"], .kontakt__formular textarea {
+  width: 100%; padding: 0.8rem 0.9rem; font: inherit; color: var(--tinte); background: var(--weiss); border: 2px solid var(--tinte); border-radius: 0;
+}
+.kontakt__formular input:focus-visible, .kontakt__formular textarea:focus-visible { outline: 3px solid var(--marker); outline-offset: 2px; }
+.kontakt__formular .feld--check { display: flex; gap: 0.7rem; align-items: flex-start; font-weight: 400; font-size: 0.9rem; }
+.kontakt__formular .feld--check input { margin-top: 0.25rem; width: 1.1rem; height: 1.1rem; flex: none; }
+.kontakt__formular .feld--check a { text-decoration: underline; }
+.kontakt__formular button { justify-self: start; cursor: pointer; border: 0; font: inherit; }
+
+/* Footer + Rechtstexte */
+.fuss__zeile { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; }
+.fuss nav { display: flex; gap: 1.25rem; }
+.fuss a:hover { text-decoration: underline; }
+.rechtstext { padding-block: calc(var(--abstand) * 0.6) var(--abstand); }
+.rechtstext__inhalt { max-width: 48rem; }
+.rechtstext h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin-bottom: 2rem; }
+.rechtstext h2 { font-size: 1.25rem; margin: 2rem 0 0.6rem; }
+.rechtstext p { margin-bottom: 1rem; line-height: 1.65; }
+.rechtstext a { text-decoration: underline; text-underline-offset: 3px; }

@@ -6,6 +6,27 @@ import { contact } from '../data/content';
     <h2 class="kontakt__titel">{contact.title}</h2>
     <p class="kontakt__text">{contact.text}</p>
     <a class="knopf knopf--marker" href="#kontakt">{contact.cta}</a>
+    <form class="kontakt__formular" name="kontakt" method="POST" action="/danke/" data-netlify="true" netlify-honeypot="bot-feld">
+      <input type="hidden" name="form-name" value="kontakt" />
+      <p class="kontakt__falle" hidden><label>Nicht ausfüllen: <input name="bot-feld" /></label></p>
+      <div class="feld">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required />
+      </div>
+      <div class="feld">
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+      </div>
+      <div class="feld">
+        <label for="nachricht">Ihre Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+      </div>
+      <label class="feld feld--check">
+        <input type="checkbox" name="datenschutz" required />
+        <span>Ich habe die <a href="/datenschutz/">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden.</span>
+      </label>
+      <button type="submit" class="knopf knopf--marker">Nachricht senden</button>
+    </form>
     <dl class="kontakt__daten">
       <div><dt>Telefon</dt><dd><a href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a></dd></div>
       <div><dt>E-Mail</dt><dd><a href={`mailto:${contact.email}`}>{contact.email}</a></dd></div>
