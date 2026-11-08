@@ -252,6 +252,7 @@
 
 .kontakt__daten dt { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #cfd3fa; margin-bottom: 0.3rem; }
 .kontakt__daten dd { font-size: 1.1rem; }
+.kontakt__daten a { text-decoration: none; }
 
 .fuss { padding-block: 1.75rem; font-size: 0.9rem; color: var(--tinte-weich); }
 
