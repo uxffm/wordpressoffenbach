@@ -76,7 +76,7 @@ export const contact = {
   title: 'Bereit für Ihre neue Website?',
   text: 'Lassen Sie uns gemeinsam herausfinden, wie WordPress Ihr Unternehmen in Offenbach voranbringt. Das Erstgespräch ist kostenlos und unverbindlich.',
   cta: 'Jetzt Kontakt aufnehmen',
-  phone: '[Telefon]',
-  email: '[E-Mail]',
-  address: '[Adresse, Offenbach am Main]',
+  phone: '0162 751 9335',
+  email: 'hallo@wordpress-offenbach.de',
+  address: 'Goerdelerstr. 33, Offenbach am Main',
 };
