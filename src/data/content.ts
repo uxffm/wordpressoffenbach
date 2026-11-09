@@ -65,10 +65,10 @@ export const process = {
 export const faq = {
   title: 'Häufige Fragen zu WordPress in Offenbach',
   items: [
-    { q: 'Was kostet eine WordPress-Website?', a: 'Das hängt von Umfang und Funktionen ab. Eine kleine Unternehmensseite gibt es ab 300 €. Bei größeren Projekten wie einem Onlineshop richtet sich der Preis nach dem Umfang. Nach dem Erstgespräch erhalten Sie ein transparentes Festpreisangebot.' },
-    { q: 'Wie lange dauert die Umsetzung?', a: 'Eine Website ist ab etwa einer Woche online, abhängig davon, wie schnell Inhalte wie Texte und Fotos vorliegen.' },
-    { q: 'Kann ich meine Website danach selbst bearbeiten?', a: 'Ja. WordPress ist intuitiv bedienbar, und wir schulen Sie nach dem Launch persönlich.' },
-    { q: 'Übernehmt ihr auch bestehende WordPress-Seiten?', a: 'Ja. Wir analysieren Ihre aktuelle Website, beheben Fehler, verbessern Ladezeit und Sicherheit und übernehmen die laufende Wartung.' },
+    { q: 'Was kostet eine WordPress-Website?', a: 'Das hängt vom Umfang ab. Ein Onepager startet ab 300 €. Bei einer Unternehmens-Website mit mehreren Unterseiten oder einem WooCommerce-Shop richtet sich der Preis nach den Funktionen. Nach dem Erstgespräch erhalten Sie ein transparentes Festpreis-Angebot ohne versteckte Kosten.' },
+    { q: 'Wie lange dauert die Umsetzung?', a: 'Ein Onepager ist meist in etwa einer Woche online, eine größere Website braucht entsprechend länger. Den genauen Zeitplan legen wir gemeinsam im Erstgespräch fest.' },
+    { q: 'Kann ich meine Homepage danach selbst bearbeiten?', a: 'Ja. Texte, Bilder und Blogbeiträge ändern Sie bequem im WordPress-Editor. In einer persönlichen Schulung zeigen wir Ihnen alles Wichtige, und bei Fragen sind wir weiterhin für Sie da.' },
+    { q: 'Übernehmen Sie auch bestehende WordPress-Seiten?', a: 'Ja. Wir prüfen Ihre bestehende Website auf Sicherheit, Ladezeit und SEO und übernehmen danach Wartung, Fehlerbehebung oder einen kompletten Relaunch.' },
   ],
 };
 
