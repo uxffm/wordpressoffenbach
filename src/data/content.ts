@@ -9,10 +9,10 @@ export const meta = {
 export const brand = 'WordPress Offenbach';
 
 export const hero = {
-  before: 'WordPress-Webdesign in Offenbach: Websites, die',
+  before: 'WordPress-Webdesign aus Offenbach, das',
   marked: 'gefunden',
-  middle: 'werden und',
-  accent: 'verkaufen',
+  middle: 'wird und',
+  accent: 'verkauft',
   lede: 'Sie möchten eine Homepage erstellen lassen oder suchen eine WordPress-Agentur in Offenbach am Main? Wir entwickeln moderne, mobilfreundliche Websites auf Basis von WordPress: individuell gestaltet, technisch sauber umgesetzt und einfach selbst zu pflegen. Für Unternehmen, Selbstständige und Vereine in Offenbach, Frankfurt und im gesamten Rhein-Main-Gebiet.',
   cta: 'Kostenloses Erstgespräch vereinbaren',
   facts: ['Fester Ansprechpartner vor Ort'],

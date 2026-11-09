@@ -30,14 +30,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 5rem);
-  align-items: end;
+  align-items: center;
 }
 
 .hero__titel {
   font-size: clamp(2.3rem, 5.2vw, 4.9rem);
-  line-height: 1;
+  line-height: 1.1;
   font-stretch: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 2.25rem;
 }
 
 .hero__marker {
