@@ -13,3 +13,15 @@
   to = "https://wordpress-offenbach.de/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/sitemap-index.xml"
+  to = "/sitemap.xml"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sitemap-0.xml"
+  to = "/sitemap.xml"
+  status = 301
+  force = true

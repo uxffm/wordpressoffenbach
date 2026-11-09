@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wordpress-offenbach.de/sitemap-index.xml
+Sitemap: https://wordpress-offenbach.de/sitemap.xml
