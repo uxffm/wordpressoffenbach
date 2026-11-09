@@ -1,5 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import { brand } from '../data/content';
+
+const hasPosts = (await getCollection('blog', ({ data }) => !data.draft)).length > 0;
 ---
 <header class="kopf">
   <div class="seite kopf__zeile">
@@ -8,6 +11,7 @@ import { brand } from '../data/content';
       <a href="/#leistungen">Leistungen</a>
       <a href="/#ablauf">Ablauf</a>
       <a href="/#fragen">Fragen</a>
+      {hasPosts && <a href="/blog/">Blog</a>}
       <a class="knopf" href="/#kontakt">Kontakt</a>
     </nav>
   </div>

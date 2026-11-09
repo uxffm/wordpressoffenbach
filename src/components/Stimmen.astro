@@ -1,0 +1,55 @@
+---
+import { reviews } from '../data/content';
+---
+<section class="stimmen" aria-label={reviews.title} data-stimmen>
+  <div class="seite">
+    <p class="stimmen__titel">{reviews.title}</p>
+    <div class="stimmen__buehne">
+      {reviews.items.map((r, i) => (
+        <figure class="stimme" data-stimme data-aktiv={i === 0 ? 'true' : 'false'}>
+          <blockquote>„{r.text}“</blockquote>
+          {r.reply && <p class="stimme__antwort"><strong>Antwort vom Inhaber:</strong> {r.reply}</p>}
+        </figure>
+      ))}
+    </div>
+    {reviews.profileUrl && (
+      <p class="stimmen__profil"><a href={reviews.profileUrl} target="_blank" rel="noopener noreferrer">{reviews.profileLabel} →</a></p>
+    )}
+    <div class="stimmen__punkte" role="tablist" aria-label="Kundenstimme wählen">
+      {reviews.items.map((r, i) => (
+        <button type="button" data-punkt aria-label={`Stimme ${i + 1} von ${reviews.items.length}`} aria-current={i === 0 ? 'true' : 'false'}></button>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-stimmen]');
+  if (root) {
+    root.classList.add('stimmen--js');
+    const items = [...root.querySelectorAll<HTMLElement>('[data-stimme]')];
+    const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-punkt]')];
+    let current = 0;
+    let timer: number | undefined;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const show = (n: number) => {
+      current = (n + items.length) % items.length;
+      items.forEach((el, i) => el.setAttribute('data-aktiv', String(i === current)));
+      dots.forEach((el, i) => el.setAttribute('aria-current', String(i === current)));
+    };
+    const start = () => {
+      if (reduce || items.length < 2) return;
+      stop();
+      timer = window.setInterval(() => show(current + 1), 7000);
+    };
+    const stop = () => { if (timer) window.clearInterval(timer); };
+
+    dots.forEach((d, i) => d.addEventListener('click', () => { show(i); start(); }));
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', start);
+    start();
+  }
+</script>

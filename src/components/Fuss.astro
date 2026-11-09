@@ -1,10 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import { brand } from '../data/content';
+
+const hasPosts = (await getCollection('blog', ({ data }) => !data.draft)).length > 0;
 ---
 <footer class="fuss">
   <div class="seite fuss__zeile">
     <span>© {new Date().getFullYear()} {brand}</span>
     <nav aria-label="Rechtliches">
+      {hasPosts && <a href="/blog/">Blog</a>}
       <a href="/impressum/">Impressum</a>
       <a href="/datenschutz/">Datenschutz</a>
     </nav>
