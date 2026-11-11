@@ -25,3 +25,9 @@
   to = "/sitemap.xml"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/wpbakery-updates-ohne-support-lizenz-migration"
+  to = "/blog/wpbakery-updates-ohne-support-lizenz/"
+  status = 301
+  force = true
